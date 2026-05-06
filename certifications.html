@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Harshitha</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .cert-card {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform var(--transition-normal);
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+    }
+
+    .cert-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(20, 184, 166, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .cert-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .cert-issuer {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .cert-link {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+
+    .placeholder-text {
+      text-align: center;
+      padding: 3rem;
+      color: var(--text-secondary);
+      border: 2px dashed var(--border-color);
+      border-radius: 16px;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="blob-bg blob-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">H.</a>
+      <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html" class="active">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Certifications Section -->
+  <section class="container" style="padding-top: 120px;">
+    <h2 class="section-title animate-on-scroll">My <span>Certifications</span></h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;" class="animate-on-scroll delay-100">
+      Professional certifications and completed courses.
+    </p>
+
+    <!-- Placeholder for when the user adds certificates later -->
+    <div class="placeholder-text animate-on-scroll delay-200">
+      <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Certificates Coming Soon</h3>
+      <p>I will be updating this section with my latest certifications and achievements.</p>
+    </div>
+
+    <!-- Example Layout for future certificates -->
+    <div class="cert-grid" style="margin-top: 3rem; display: none;"> <!-- remove display:none when adding -->
+      
+      <!-- Example Cert Card -->
+      <div class="glass cert-card">
+        <div class="cert-icon">🏆</div>
+        <h3 class="cert-title">Full Stack Web Development</h3>
+        <p class="cert-issuer">Coursera</p>
+        <a href="#" class="cert-link">View Certificate &rarr;</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

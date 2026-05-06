@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Harshitha</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      border-color: var(--primary);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--surface-color), #2d3748);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .project-info {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      background-color: rgba(20, 184, 166, 0.1);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-links a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="blob-bg blob-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">H.</a>
+      <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="container" style="padding-top: 120px;">
+    <h2 class="section-title animate-on-scroll">Featured <span>Projects</span></h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;" class="animate-on-scroll delay-100">
+      Here are a few of my recent projects. They represent my ability to build robust applications and beautiful interfaces.
+    </p>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="glass project-card animate-on-scroll delay-100">
+        <div class="project-img">🛒</div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">A full-stack e-commerce solution featuring user authentication, payment gateway integration, and a responsive admin dashboard.</p>
+          <div class="project-links">
+            <a href="#" style="color: var(--primary);">Live Demo</a>
+            <a href="#" style="color: var(--text-secondary);">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass project-card animate-on-scroll delay-200">
+        <div class="project-img">📊</div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Chart.js</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <h3 class="project-title">Data Analytics Dashboard</h3>
+          <p class="project-desc">An interactive dashboard that visualizes complex datasets in real-time. Designed with a focus on UI/UX and dark mode aesthetics.</p>
+          <div class="project-links">
+            <a href="#" style="color: var(--primary);">Live Demo</a>
+            <a href="#" style="color: var(--text-secondary);">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass project-card animate-on-scroll delay-300">
+        <div class="project-img">📱</div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Figma</span>
+          </div>
+          <h3 class="project-title">Social Media Landing Page</h3>
+          <p class="project-desc">A highly responsive and animated landing page created for a startup social media application.</p>
+          <div class="project-links">
+            <a href="#" style="color: var(--primary);">Live Demo</a>
+            <a href="#" style="color: var(--text-secondary);">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Harshitha</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .info-card {
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      transition: transform var(--transition-normal);
+    }
+
+    .info-card:hover {
+      transform: translateX(10px);
+      border-color: var(--primary);
+    }
+
+    .info-icon {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .info-details h4 {
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .info-details p, .info-details a {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .info-details a:hover {
+      color: var(--primary);
+    }
+
+    .contact-form {
+      padding: 2.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      transition: all var(--transition-fast);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .info-card:hover {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="blob-bg blob-1"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">H.</a>
+      <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container" style="padding-top: 120px;">
+    <h2 class="section-title animate-on-scroll">Get In <span>Touch</span></h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;" class="animate-on-scroll delay-100">
+      Have a question or want to work together? I'd love to hear from you.
+    </p>
+
+    <div class="contact-wrapper">
+      
+      <!-- Contact Info -->
+      <div class="contact-info animate-on-scroll delay-100">
+        
+        <div class="glass info-card">
+          <div class="info-icon">📧</div>
+          <div class="info-details">
+            <h4>Email</h4>
+            <a href="mailto:harshitha@example.com">harshitha@example.com</a>
+          </div>
+        </div>
+
+        <div class="glass info-card">
+          <div class="info-icon">📍</div>
+          <div class="info-details">
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+        </div>
+
+        <div class="glass info-card">
+          <div class="info-icon">💼</div>
+          <div class="info-details">
+            <h4>LinkedIn</h4>
+            <a href="#" target="_blank">linkedin.com/in/harshitha</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="glass contact-form animate-on-scroll delay-200">
+        <form action="mailto:harshitha@example.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="Name" class="form-control" required placeholder="John Doe">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="Email" class="form-control" required placeholder="john@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="Message" class="form-control" required placeholder="Hello Harshitha..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

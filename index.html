@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshitha | Portfolio</title>
+  <meta name="description" content="Professional Portfolio of Harshitha - Web Developer & Designer">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">H.</a>
+      <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding-top: 80px;">
+    <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4rem;">
+      
+      <!-- Text Content -->
+      <div class="hero-content animate-on-scroll" style="flex: 1; min-width: 300px;">
+        <h2 style="font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 1rem;">Hello, I'm</h2>
+        <h1 style="font-size: 4rem; margin-bottom: 1rem; line-height: 1.1;">
+          Harshitha <br>
+          <span class="text-gradient typing-text" style="font-size: 2.5rem; display: inline-block; min-height: 3rem;"></span><span class="cursor" style="font-size: 2.5rem; color: var(--primary); animation: fadeIn 1s infinite alternate;">|</span>
+        </h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px;">
+          I build scalable web applications and craft beautiful digital experiences. Let's create something amazing together.
+        </p>
+        <div class="hero-buttons" style="display: flex; gap: 1rem;">
+          <a href="Harshitha_Modern_Resume (4).pdf" class="btn btn-primary" target="_blank">View Resume</a>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class="hero-image animate-on-scroll delay-200" style="flex: 1; min-width: 300px; display: flex; justify-content: center; position: relative;">
+        <!-- Glowing Background behind image -->
+        <div style="position: absolute; width: 100%; height: 100%; max-width: 350px; max-height: 350px; background: radial-gradient(circle, var(--primary) 0%, transparent 70%); opacity: 0.3; filter: blur(40px); z-index: -1;"></div>
+        
+        <img src="WhatsApp Image 2026-05-06 at 12.05.27 PM.jpeg" alt="Harshitha" style="width: 100%; max-width: 350px; height: 350px; object-fit: cover; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; border: 4px solid var(--surface-color); box-shadow: 0 20px 40px rgba(0,0,0,0.4); animation: float 6s ease-in-out infinite;">
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
